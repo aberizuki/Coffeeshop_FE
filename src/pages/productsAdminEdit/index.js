@@ -17,7 +17,9 @@ const EditProduct = () => {
   const [dataImages, setDataImages] = useState({});
   useEffect(() => {
     axios
-      .get(`coffeeshopbe-production.up.railway.app/api/v1/product/`)
+      .get(
+        `https://https://coffeeshopbe-production.up.railway.app/api/v1/product/`
+      )
       .then((res) => setDataImages(res.data.data))
       .catch((err) => console.log(err));
   });
@@ -30,7 +32,7 @@ const EditProduct = () => {
           <section className="prod-zoom p-120 mb-5 flex">
             <img
               className="rounded-real det-img mb-5"
-              src={`coffeeshopbe-production.up.railway.app/uploads/images/${
+              src={`https://coffeeshopbe-production.up.railway.app/uploads/images/${
                 dataProduct.images ? dataProduct.images[0].filename : ""
               }`}
               alt=""

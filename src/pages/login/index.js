@@ -15,7 +15,7 @@ export default function Login() {
     event.preventDefault();
     console.log(loginForm);
     axios({
-      url: "coffeeshopbe-production.up.railway.app/api/v1/auth/login",
+      url: "https://coffeeshopbe-production.up.railway.app/api/v1/auth/login",
       method: "POST",
       data: loginForm,
     })

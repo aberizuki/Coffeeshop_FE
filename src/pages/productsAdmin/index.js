@@ -17,7 +17,9 @@ const ProductsAdmin = () => {
 
   const confirmDelete = (id) => {
     axios
-      .delete(`coffeeshopbe-production.up.railway.app/api/v1/product/${id}`)
+      .delete(
+        `https://coffeeshopbe-production.up.railway.app/api/v1/product/${id}`
+      )
       .then((res) => {
         console.log("success delete: ", res.data);
         // navigate("/product");
@@ -139,7 +141,7 @@ const ProductsAdmin = () => {
                   <Link to={`/productAdminEdit/${item.id}`}>
                     <img
                       className="rounded-full prod-img p-10 justify-center mr-[0]"
-                      src={`coffeeshopbe-production.up.railway.app/uploads/images/${item.images[0].filename}`}
+                      src={`https://coffeeshopbe-production.up.railway.app/uploads/images/${item.images[0].filename}`}
                       alt=""
                     />
                   </Link>

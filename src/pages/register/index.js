@@ -19,7 +19,7 @@ const Register = () => {
 
     axios
       .post(
-        `coffeeshopbe-production.up.railway.app/api/v1/auth/register`,
+        `https://coffeeshopbe-production.up.railway.app/api/v1/auth/register`,
         data,
         {
           headers: {

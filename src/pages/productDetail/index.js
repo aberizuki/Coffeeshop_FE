@@ -9,7 +9,9 @@ const ProductDetail = () => {
   const [dataProduct, setDataProduct] = useState({});
   useEffect(() => {
     axios
-      .get(`coffeeshopbe-production.up.railway.app/api/v1/product/${id}`)
+      .get(
+        `https://coffeeshopbe-production.up.railway.app/api/v1/product/${id}`
+      )
       .then((res) => setDataProduct(res.data.data))
       .catch((err) => console.log(err));
   }, []);
@@ -17,7 +19,7 @@ const ProductDetail = () => {
   const [dataImages, setDataImages] = useState({});
   useEffect(() => {
     axios
-      .get(`coffeeshopbe-production.up.railway.app/api/v1/product/`)
+      .get(`https://coffeeshopbe-production.up.railway.app/api/v1/product/`)
       .then((res) => setDataImages(res.data.data))
       .catch((err) => console.log(err));
   });
@@ -77,7 +79,7 @@ const ProductDetail = () => {
             })} */}
             <img
               className="rounded-real det-img mb-5"
-              src={`coffeeshopbe-production.up.railway.app/uploads/images/${
+              src={`https://coffeeshopbe-production.up.railway.app/uploads/images/${
                 dataProduct.images ? dataProduct.images[0].filename : ""
               }`}
               alt=""

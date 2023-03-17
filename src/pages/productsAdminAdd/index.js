@@ -30,12 +30,16 @@ const AddProduct = ({ img }) => {
     console.log(image);
 
     axios
-      .post(`coffeeshopbe-production.up.railway.app/api/v1/product`, data, {
-        headers: {
-          "content-type": "multipart/form-data",
-          // token : userLogin,
-        },
-      })
+      .post(
+        `https://coffeeshopbe-production.up.railway.app/api/v1/product`,
+        data,
+        {
+          headers: {
+            "content-type": "multipart/form-data",
+            // token : userLogin,
+          },
+        }
+      )
       .then((res) => {
         console.log("post success:", res);
         navigate("/productAdmin");

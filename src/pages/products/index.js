@@ -76,7 +76,7 @@ const Products = () => {
                   <Link to={`/product/${item.id}`}>
                     <img
                       className="rounded-full prod-img p-10 justify-center mr-[0]"
-                      src={`coffeeshopbe-production.up.railway.app/uploads/images/${item.images[0].filename}`}
+                      src={`https://coffeeshopbe-production.up.railway.app/uploads/images/${item.images[0].filename}`}
                       alt=""
                     />
                   </Link>
