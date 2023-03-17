@@ -14,7 +14,7 @@ export const getAllproducts = () => {
   return (dispatch) => {
     dispatch(getAllproductsRequest());
     return axios
-      .get("http://localhost:5000/api/v1/product")
+      .get("coffeeshopbe-production.up.railway.app/api/v1/product")
       .then((res) => {
         dispatch(getAllproductsSuccess(res.data));
       })

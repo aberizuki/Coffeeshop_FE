@@ -18,11 +18,15 @@ const Register = () => {
     console.log(password);
 
     axios
-      .post(`http://localhost:5000/api/v1/auth/register`, data, {
-        headers: {
-          "content-type": "multipart/form-data",
-        },
-      })
+      .post(
+        `coffeeshopbe-production.up.railway.app/api/v1/auth/register`,
+        data,
+        {
+          headers: {
+            "content-type": "multipart/form-data",
+          },
+        }
+      )
       .then((res) => console.log("post success:", res))
       .catch((err) => console.log("err:", err));
   };

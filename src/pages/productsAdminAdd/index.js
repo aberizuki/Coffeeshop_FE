@@ -30,7 +30,7 @@ const AddProduct = ({ img }) => {
     console.log(image);
 
     axios
-      .post(`http://localhost:5000/api/v1/product`, data, {
+      .post(`coffeeshopbe-production.up.railway.app/api/v1/product`, data, {
         headers: {
           "content-type": "multipart/form-data",
           // token : userLogin,

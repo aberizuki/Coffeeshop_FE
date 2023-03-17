@@ -9,7 +9,7 @@ const ProductDetail = () => {
   const [dataProduct, setDataProduct] = useState({});
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/v1/product/${id}`)
+      .get(`coffeeshopbe-production.up.railway.app/api/v1/product/${id}`)
       .then((res) => setDataProduct(res.data.data))
       .catch((err) => console.log(err));
   }, []);
@@ -17,7 +17,7 @@ const ProductDetail = () => {
   const [dataImages, setDataImages] = useState({});
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/v1/product/`)
+      .get(`coffeeshopbe-production.up.railway.app/api/v1/product/`)
       .then((res) => setDataImages(res.data.data))
       .catch((err) => console.log(err));
   });
@@ -69,7 +69,7 @@ const ProductDetail = () => {
                 return (
                   <img
                     className="rounded-real mb-5"
-                    src={`http://localhost:5000/uploads/images/${item.images[0].filename}`}
+                    src={`coffeeshopbe-production.up.railway.app/uploads/images/${item.images[0].filename}`}
                     alt=""
                   />
                 );
@@ -77,7 +77,7 @@ const ProductDetail = () => {
             })} */}
             <img
               className="rounded-real det-img mb-5"
-              src={`http://localhost:5000/uploads/images/${
+              src={`coffeeshopbe-production.up.railway.app/uploads/images/${
                 dataProduct.images ? dataProduct.images[0].filename : ""
               }`}
               alt=""
