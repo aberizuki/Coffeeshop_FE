@@ -84,7 +84,7 @@ const Products = () => {
                   <a>
                     <strong className="p-10">{item.title}</strong> <br />
                   </a>
-                  <a className="text-secondary p-10">{item.price}</a>
+                  <a className="text-secondary p-10">Rp {item.price}</a>
                   <a>{}</a>
                 </div>
               );
