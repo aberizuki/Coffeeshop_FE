@@ -12,7 +12,7 @@ Coffee Shop is a website application for ordering coffee and food. This project 
 ## Getting Started
 How to install this project :
 
-1. Clone this repository with `git clone https://github.com/aberizuki/FazzPay_FE.git`
+1. Clone this repository with `git clone https://github.com/aberizuki/Coffeeshop_FE.git`
 2. Open app's directory in CMD or Terminal
 3. Type `npm install` or `yarn install`
 4. `npm start`
